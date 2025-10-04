@@ -1,0 +1,14 @@
+data_paths:
+  raw: "data/raw"
+  cleaned: "data/cleaned"
+  reports: "data/reports"
+
+log_file: "logs/pipeline.log"
+
+processing:
+  batch_size: 5000
+  timestamp_format: "%Y-%m-%d %H:%M:%S"
+
+elasticsearch:
+  host: "http://localhost:9200"
+  index_name: "system_logs"
